@@ -1078,13 +1078,11 @@ footer {
         position: relative;
         width: 250px;
         height: 250px;
-
+        inset: 6px 5px; 
+        overflow: hidden;     
     }
-
     .img-box .image {
-        width: 250px;
-        height: 250px;
-        background-position: top 61% right -125px;
+        background-position: top 78% right -73px;
     }
 
     @keyframes floatImage {
@@ -1132,19 +1130,18 @@ footer {
         width: 85%;
         height: 240px;
     }
-
     .rotate-text span {
         width: 292px;
         height: 292px;
     }
 
     .rotate-text .text {
-        width: 320px;
-        height: 320px;
+        width: 340px;
+        height: 340px;
     }
 
     .text b {
-        transform-origin: 0 160px;
+        transform-origin: 0 170px;
     }
  
 
@@ -1181,17 +1178,17 @@ footer {
     .home {
         grid-gap: 0;
     }
-
-     .filter-buttons {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        grid-gap: 1rem;
-    }
-
-    .filter-buttons button {
+    .filter-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
         width: 100%;
-        padding: 13px;
-    } 
+      }
+    
+      .filter-buttons > button {
+        flex: 1 1 calc(33.33% - 1rem); 
+        margin-bottom: 1rem; 
+      }
     
 
 
