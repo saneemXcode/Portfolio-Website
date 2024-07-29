@@ -1012,7 +1012,20 @@ footer {
     .img-hero {
         margin-top: 3rem;
     }
+    /* .contact-skills {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    } */
 
+}
+@media(max-width:875px) {
+ .contact-skills {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    } 
+   
 }
 
 @media(max-width:768px) {
