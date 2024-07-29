@@ -1214,6 +1214,20 @@ footer {
     .image-hero img {
         width: 100%;
     }
+    .rotate-text .text {
+        width: 320px;
+        height: 320px;
+    }
+    .text b {
+        transform-origin: 0 160px;
+    }
+    .image-hero .img-box {
+        position: relative;
+        width: 250px;
+        height: 250px;
+        inset: 2px 2px;
+        overflow: hidden;
+    }
 
     .text-animate {
         width: 23.8rem;
@@ -1236,7 +1250,6 @@ footer {
         padding: 10px 15px;
     }
 
-  
     .filter-buttons {
         display: flex;
         flex-wrap: wrap;
