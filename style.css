@@ -1232,6 +1232,7 @@ footer {
         height: 320px;
     }
     .text b {
+        font-size: 11px;
         transform-origin: 0 160px;
     }
     .image-hero .img-box {
