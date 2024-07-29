@@ -176,7 +176,11 @@ ScrollReveal().reveal('.about-content,.skills', { origin: "right" });
 ScrollReveal().reveal('.project-gallery,footer,.image-hero', { origin: "bottom" });
 
 
-document.getElementById('contactForm').onsubmit = function() {
-    this.reset();
-    return true; 
-};
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    
+    e.target.submit();
+    
+    setTimeout(function() {
+        e.target.reset();
+    }, 1000); 
+});
